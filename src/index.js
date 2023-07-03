@@ -1,13 +1,46 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "design-system-ls/dist/main.css";
+import ErrorPage from './pages/ErrorPage';
+import Home from './pages/Home';
+import BtsButtonPage from './pages/BtsButtonPages';
+import BtsTypographyPage from './pages/BtsTypographyPage';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        index: true,
+        element: < Home />
+      },
+      {
+        path: "bts-buttons",
+        element: <BtsButtonPage/>
+      },
+      {
+        path: "bts-typography",
+        element: <BtsTypographyPage />
+      }
+
+    ]
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
