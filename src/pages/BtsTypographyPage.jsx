@@ -1,14 +1,9 @@
+import TemplatePage from "./TemplatePage";
+
 export default function BtsTypographyPage() {
 
     return (
-        <div class="ex-container">
-            <div class="ex-dflex">
-                <img className="ex-logo" src={process.env.PUBLIC_URL + "/ls-logo.png"} alt="ex-log" />
-                <span class="bts-bodyMd">Luarsekolah BTS</span>
-            </div>
-            <p>
-                <span class="bts-heading4xl">Typography</span>
-            </p>
+        <TemplatePage title="Typography">
             <p class="bts-bodyMd">
                 Typography is a key part in building UI Design. It helps to organize
                 content and create hierarchy to inform users. <br />Design token:
@@ -16,7 +11,6 @@ export default function BtsTypographyPage() {
                 <br /><br /><span class="bts-txt-critical">
                     Example: --bts-heading4xl || --bts-bodyLg-medium </span >
             </p>
-
             <table class="table">
                 <thead>
                     <th width="400px">Variant</th>
@@ -180,7 +174,7 @@ export default function BtsTypographyPage() {
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </TemplatePage>
     );
 
 }

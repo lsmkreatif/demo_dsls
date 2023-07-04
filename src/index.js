@@ -13,6 +13,7 @@ import ErrorPage from './pages/ErrorPage';
 import Home from './pages/Home';
 import BtsButtonPage from './pages/BtsButtonPages';
 import BtsTypographyPage from './pages/BtsTypographyPage';
+import BtsLinkPage from './pages/BtsLink.Page';
 
 const router = createBrowserRouter([
   {
@@ -31,7 +32,12 @@ const router = createBrowserRouter([
       {
         path: "bts-typography",
         element: <BtsTypographyPage />
+      },
+      {
+        path: "bts-link",
+        element: <BtsLinkPage />
       }
+
 
     ]
   },
