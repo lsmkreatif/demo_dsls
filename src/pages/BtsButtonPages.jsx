@@ -2,7 +2,7 @@ export default function BtsButtonPage() {
     return (
         <div className="ex-container">
             <div className="ex-dflex">
-                <img className="ex-logo" src="./assets/ls-logo.png" alt="ex-log" />
+                <img className="ex-logo" src={process.env.PUBLIC_URL +"/ls-logo.png"} alt="ex-log" />
                 <span className="bts-bodyMd">Luarsekolah BTS</span>
             </div>
             <p>

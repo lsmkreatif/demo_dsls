@@ -3,7 +3,7 @@ export default function BtsTypographyPage() {
     return (
         <div class="ex-container">
             <div class="ex-dflex">
-                <img class="ex-logo" src="./assets/ls-logo.png" alt="ex-log" />
+                <img className="ex-logo" src={process.env.PUBLIC_URL + "/ls-logo.png"} alt="ex-log" />
                 <span class="bts-bodyMd">Luarsekolah BTS</span>
             </div>
             <p>
