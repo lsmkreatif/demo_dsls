@@ -19,6 +19,9 @@ function App() {
             <li>
               <a href={`/bts-link`}>BTS Link</a>
             </li>
+            <li>
+              <a href={`/bts-inline-message`}>BTS Inline Message</a>
+            </li>
           </ul>
         </nav>
       </div>

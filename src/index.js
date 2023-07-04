@@ -13,7 +13,8 @@ import ErrorPage from './pages/ErrorPage';
 import Home from './pages/Home';
 import BtsButtonPage from './pages/BtsButtonPages';
 import BtsTypographyPage from './pages/BtsTypographyPage';
-import BtsLinkPage from './pages/BtsLink.Page';
+import BtsLinkPage from './pages/BtsLinkPage';
+import BtsInlineMessage from './pages/BtsInlineMessage';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "bts-link",
         element: <BtsLinkPage />
+      },
+      {
+        path: "bts-inline-message",
+        element: <BtsInlineMessage />
       }
 
 
